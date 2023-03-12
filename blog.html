@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>institution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="img/logo21.webp" alt="logo"></a>
+            <span class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </span>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Certificate & Online Programs</h1>
+    </section>
+    <!----------blog page content--------->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="img/certificate2.jpg" alt="certificate">
+                <h2>Our Certificate & Online Programs</h2>
+                <p>Hoefer academy delivers more than 100 degrees and programs and over 1,600 classes online and in a hybrid (online/in-person) 
+                    format to people like you all over the world. The Hoefer institute looks to innovate, inspire, and network with people around the world. </p>
+                                 
+                                <div class="comment-box">
+                                    <h3>Leave a comment</h3>
+                                    <form class="comment-form">
+                                        <input type="text" placeholder="Enter Name">
+                                        <input type="email" placeholder="Enter Email">
+                                        <textarea rows="5" placeholder="Your comment"></textarea>
+                                        <button type="submit" class="hero-btn blue-btn">POST COMMENT</button>
+                                    </form>
+                                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Data Analytics</span>
+                    <span>43</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>45</span>
+                </div>
+                <div>
+                    <span>Machine Learnig</span>
+                    <span>35</span>
+                </div>
+                <div>
+                    <span>Programming</span>
+                    <span>41</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+  
+
+    <!---------Footer--------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Making the world a better place</p>
+
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-whatsapp"></i>
+            </div>
+    </section>
+   
+</body>
+<!---------js for toogle menu---------->
+<script>
+     var navLinks = document.getElementById("navLinks");
+
+     function showMenu(){
+        navLinks.style.right ="0"
+     }
+     function hideMenu(){
+        navLinks.style.right ="-200px"
+     }
+</script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>institution</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="home.html"><img src="img/logo21.webp" alt="logo"></a>
+            <span class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </span>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Our Courses</h1>
+    </section>
+
+    <!---------course--------->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>We offer many course that suit our student</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermidiate</h3>
+                <p> The level of our student are advanced. The level corresponds to levels B1 and B2 of the CEFR. 
+                We analysed our student as they perform  increasingly  well to their complex tasks</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Among computer institutions, Hoefer institute was granted limited degree awarding powers by the Governor of lagos state despite not being a university. 
+                 including higher education colleges, and colleges.Many of which are now effectively universities in their own right.</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Many of our student has has successfully completed an undergraduate degree level 
+                course at a our institute and is undertaking further study at a more advanced level.</p>
+            </div>
+        </div> 
+    </section>
+
+    <!-------facilities-------->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>The school facility is much more than a passive container of the educational process: it is, rather, an integral component of the conditions of learning. 
+            <br>The layout and design of a facility contributes to the place experience of students, educators, and community members.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="img/computer room.webp" alt="computer">
+            </div>
+            <div class="facilities-col">
+                <img src="img/classroom.webp" alt="computer">
+            </div>
+            <div class="facilities-col">
+                <img src="img/computer class.webp" alt="computer">
+            </div>
+        </div>
+    </section>
+  
+
+    <!---------Footer--------->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Making the world a better place</p>
+
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-whatsapp"></i>
+            </div>
+    </section>
+   
+</body>
+<!---------js for toogle menu---------->
+<script>
+     var navLinks = document.getElementById("navLinks");
+
+     function showMenu(){
+        navLinks.style.right ="0"
+     }
+     function hideMenu(){
+        navLinks.style.right ="-200px"
+     }
+</script>
+</html>
